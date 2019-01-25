@@ -5,7 +5,7 @@ header-img: img/home-bg.png
 email: kosta.tzioumis@gmail.com
 copyright_name: Kosta Tzioumis
 description: > # this means to ignore newlines until "baseurl:"
-  sub
+  Flatiron School Data Science Online Student
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  ktzioumis
