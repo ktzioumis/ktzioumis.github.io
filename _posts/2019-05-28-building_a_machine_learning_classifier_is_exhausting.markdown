@@ -8,11 +8,11 @@ permalink:  building_a_machine_learning_classifier_is_exhausting
 
 ## Introduction:
 
-This was my first opportunity to take a deep dive into a data set of my own choosing so why did I choose this Los Angeles Metro Bike Share Trip Data (`https://www.kaggle.com/cityofLA/los-angeles-metro-bike-share-trip-data`)? Los Angeles is a city I have never visited (I live in New York, East Coast baby) and bicycling is a mode of transport I don't particularly care for but I was drawn into a snapshot of a system at work anyway.  I wanted to know how this little web was going to play out.
+This was my first opportunity to take a deep dive into a data set of my own choosing so why did I choose this Los Angeles Metro Bike Share Trip Data[https://www.kaggle.com/cityofLA/los-angeles-metro-bike-share-trip-data](https://www.kaggle.com/cityofLA/los-angeles-metro-bike-share-trip-data) ? Los Angeles is a city I have never visited (I live in New York, East Coast baby) and bicycling is a mode of transport I don't particularly care for but I was drawn into a snapshot of a system at work anyway.  I wanted to know how this little web was going to play out.
 
 ## The Dataset:
 
-The dataset furnishes us with plenty of details, we even get we get something akin to the 5 Ws `[https://en.wikipedia.org/wiki/Five_Ws](https://en.wikipedia.org/wiki/Five_Ws)`
+The dataset furnishes us with plenty of details, we even get we get something akin to the 5 Ws [https://en.wikipedia.org/wiki/Five_Ws](https://en.wikipedia.org/wiki/Five_Ws)
 
 * When - Timestamped Start and End times 
 * Where - Start and End Stations with Latitude and Longitude
@@ -25,7 +25,7 @@ The briefest of glances shows 762 Bikes ridden over 130 thousand times between 6
 
 **Behold the Network!**
 
-<img src='https://i.imgur.com/JOItLVo.jpg' height=500 width=600>
+![In all it glory!](https://i.imgur.com/JOItLVo.jpg)
 
 Downtown LA is home to a dense network of bicycle stations, they are conveniently close-by for anyone in need of a ride or looking to drop-off at their destination. There are 2 additional stations outside the downtown area at Culver City and Venice by the beach. These stations only have rides attributed to them at the very end of our dataset's time period and appear to represent new additions to the network. 
 
