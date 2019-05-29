@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Building a Machine Learning Classifier is exhausting"
-date:       2019-05-29 02:42:26 +0000
+date:       2019-05-28 22:42:26 -0400
 permalink:  building_a_machine_learning_classifier_is_exhausting
 ---
 
@@ -12,7 +12,7 @@ This was my first opportunity to take a deep dive into a data set of my own choo
 
 ## The Dataset:
 
-The dataset furnishes us with plenty of details, we even get we get something akin to the 5 Ws `https://en.wikipedia.org/wiki/Five_Ws`
+The dataset furnishes us with plenty of details, we even get we get something akin to the 5 Ws `[https://en.wikipedia.org/wiki/Five_Ws](https://en.wikipedia.org/wiki/Five_Ws)`
 
 * When - Timestamped Start and End times 
 * Where - Start and End Stations with Latitude and Longitude
