@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Building a Machine Learning Classifier is exhausting"
+title:      "Building a Machine Learning Model is exhausting"
 date:       2019-05-28 22:42:26 -0400
 permalink:  building_a_machine_learning_classifier_is_exhausting
 ---
