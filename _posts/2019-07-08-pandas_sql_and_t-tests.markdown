@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Pandas , SQL and t-tests"
-date:       2019-07-09 02:16:14 +0000
+date:       2019-07-08 22:16:15 -0400
 permalink:  pandas_sql_and_t-tests
 ---
 
@@ -10,7 +10,7 @@ Pandas is a powerful python library, SQL is an ubiquitous databasing language an
 
 Microsoft's well known [Northwind Traders Database](http://https://www.geeksengine.com/article/northwind.html) describes the company oprations through a number of interconnected database's like below: 
 
-<img src="https://ras-blogdb.restdb.io/media/594a33ce72b4cf350000130d" width=600 height =300><br>
+<img src='https://ras-blogdb.restdb.io/media/594a33ce72b4cf350000130d' width=600 height =300><br>
 *Northwind Traders Schema*
 
 Information about the company is distributed across 13 interconnected tables with connections in each table linked by unique keys. Tables describe different areas of the company's operation; for example, there's a table for customers and a table for products and the two are linked by a third table where customers have placed orders for products. Making sense of it all separately is extracting one story from three separate books. SQL is how we take that story and give it its own book 
