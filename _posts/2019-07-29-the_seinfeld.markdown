@@ -33,8 +33,37 @@ X_t = pad_sequences(list_tokenized_train,maxlen=100)
 y=scripts.Larry.values
 ```
 
-The data is split into 75% training set and 25% test set and from the training set the deep learning model is fit with a 10% holdout for validation. The best model created using just the labelled dialogue was a Bidirectional Gated Recurrent Unit (200 nodes) and three Densely connected layers (200, 100, 50 nodes) and Dropout (0.2) trained for 2 epochs. Which sounds like, and totally is, a whole mouthful.
+The data is split into 75% training set and 25% test set and from the training set the deep learning model is fit with a 10% holdout for validation. The best model created using just the labelled dialogue was a Bidirectional Gated Recurrent Unit (200 nodes) and three Densely connected layers (200, 100, 50 nodes) and Dropout (0.2) trained for 2 epochs. Which sounds like, and totally is, a whole mouthful. To break it down:
 
-It worked though! The model is 70% accurate at predicting whether or not Larry David is the author of an unseen piece of dialogue. From here I would like to perform further editing of the Seinfeld scripts in order to remove simple greetings and phrases, more complex language would be more distinctive and likely improve the model's ability to predict authorship. Any writer could have written "hi", I don't want to know about "hi", forget "hi". Additionally, this model doesn't take into account who is speaking, how Larry writes the individual character's adds another dimension of complexity that could be addressed. 
+* Bidirectrionality - Bidirectional layers process data sequentially in both directions, forwards and backwards, using half the nodes for each direction. This structure allows the model to have both forward and backward information about the sequence each step.
+ 
+<img src="https://i.imgur.com/1LigOlT.jpg" height=150 width=550><br>
+*Bidirectionality Diagram*
+
+* Gated Recurrent Unit - Gated recurrent unit is a type of cell that passes along some but not all information about its internal state across data steps.By constantly updating their internal state, they can learn what is important to remember, and when it is okay to forget it.
+
+<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Gated_Recurrent_Unit%2C_base_type.svg/220px-Gated_Recurrent_Unit%2C_base_type.svg.png' height =300 width = 450><br>
+*Gated Recurrent Unit Diagram*
+
+* Densely connected layers - Neurons in a fully connected layer have full connections to all activations in the previous layer. Their activations can hence be computed with a matrix multiplication followed by a bias offset.
+
+<img src="https://www.houseofbots.com/images/news/12080/cover.png" height= 300 width = 450>
+<br>*Densely Connected neural network*
+
+* Droput - Individual nodes are randomly selected t obe dropped out of the netwrok based on a selected probability. This prevents overreliance on specific node pathways and overfitting
+
+<img src ='https://miro.medium.com/max/700/1*iWQzxhVlvadk6VAJjsgXgg.png' height = 200 width = 300 ><br>
+*Srivastava, Nitish, et al. ”Dropout: a simple way to prevent neural networks from
+overfitting”*
+
+* epoch - generally defined as "one pass over the entire dataset", used to separate training into distinct phases, which is useful for logging and periodic evaluation.
+
+Yeah. You know , a deep learning neural network...
+
+![](https://media2.giphy.com/media/LpLd2NGvpaiys/giphy.gif?cid=790b76115d4493b16a7a5a732ef487e5&rid=giphy.gif)
+
+It worked though! The model is 70% accurate at predicting whether or not Larry David is the author of an unseen piece of dialogue. 
+
+From here I would like to perform further editing of the Seinfeld scripts in order to remove simple greetings and phrases, more complex language would be more distinctive and likely improve the model's ability to predict authorship. Any writer could have written "hi", I don't want to know about "hi", forget "hi". Additionally, this model doesn't take into account who is speaking, how Larry writes the individual character's adds another dimension of complexity that could be addressed. 
 
 I very much hope that this is but part 1 of a series. As I keep coming back to Seinfeld in my own life, I hope to keep coming back to it in my career as a data scientist
