@@ -1,13 +1,13 @@
 ---
 layout: post
 title:      "New York Restaurant Guide"
-date:       2019-09-17 02:47:08 +0000
+date:       2019-09-16 22:47:08 -0400
 permalink:  new_york_restaurant_guide
 ---
 
 *Because we all gotta eat amirite?*
 
-I spent 3 years working in 2 Greenwich Village restaurants. As a line cook mostly, but also as a barista and a busser. I know from experience that the New York restaurant industry takes food safety inspections seriously. They have to, the thousands in fines are enough to drive a business struggling on razor thin margins over the edge but the real cost is having to put up that "Grade Pending" sign, or worse a big ol' "B" . A "C" is just gross. My Food Safety Certification is, sadly, expired now and I'm not as quick with a pair of tongs as I used to be but taking this deep dive into the New York City Department of Health and Mental Hygene's open record of inspection results brought a lot of memories flooding back (Table 7, order up!).
+I spent 3 years working in 2 Greenwich Village restaurants. As a line cook mostly, but also as a barista and a busser. I know from experience that the New York restaurant industry takes food safety inspections seriously. They have to, the thousands in fines are enough to drive a business struggling on razor thin margins over the edge but the real cost is having to put up that "Grade Pending" sign, or worse a big ol' "B" . A "C" is just gross. My Food Safety Certification is, sadly, expired now and I'm not as quick with a pair of tongs as I used to be but taking this deep dive into the New York City Department of Health and Mental Hygiene's open record of inspection results brought a lot of memories flooding back (Table 7, order up!).
 
 Read my full analysis and machine learning on [Github](https://github.com/ktzioumis/New-York-Restaurant-Guide)
  
