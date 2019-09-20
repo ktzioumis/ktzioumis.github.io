@@ -30,49 +30,11 @@ The choropleth tutorial is based on unemployment data for US counties and I used
 
 The process of creating a dropdown menu for choropleth selection I have adapted from [this tutorial](https://plot.ly/~empet/15237/choroplethmapbox-with-dropdown-menu/#/)
 
+[github jupyter notebook](https://github.com/ktzioumis/plotly-folium/blob/master/Plotly_unemp_choro.ipynb)
 
-```
-df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/fips-unemp-16.csv",
-                   dtype={"fips": str})
-df['unemp2']=24-df.unemp #generate another feature to map
+Animated gif of the result: 
 
-data=[]
-data.append(go.Choroplethmapbox(geojson='https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json', 
-                                    locations=df.fips, 
-                                    z=df.unemp,
-                                    colorbar=dict(title='Unemployment Year 1'),
-                                    colorscale="OrRd"
-                                    ))
-data.append(go.Choroplethmapbox(geojson='https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json', 
-                                    locations=df.fips, 
-                                    z=df.unemp2,
-                                    colorbar=dict(title='Unemployment Year 2'),
-                                    colorscale="OrRd"
-                                    ))
-data[0]['visible']=False
-layout=go.Layout(mapbox_style="carto-positron",
-                  mapbox_zoom=3, mapbox_center = {"lat": 37.0902, "lon": -95.7129})
-
-layout.update(updatemenus=list([
-        dict(
-            x=-0.05,
-            y=1,
-            yanchor='top',
-            buttons=list([
-                dict(
-                    args=['visible', [True, False]],
-                    label='Year: 1',
-                    method='restyle'
-                ),
-                dict(
-                    args=['visible', [False, True]],
-                    label='Year: 2',
-                    method='restyle')]))]))
-layout.update(margin={"r":0,"t":0,"l":0,"b":0})
-fig = go.Figure(data=data,layout=layout)
-
-fig.show()
-```
+![](https://github.com/ktzioumis/plotly-folium/blob/master/ezgif-3-34e50aa5d99d.gif?raw=true)
 
 I love this result! And it addresses both my problems directly.
 - The dropdown allows for selection of choropleth that is tuned to set the visibility of the other choroploeth (A third option in the dropdown could be set to have both the choropleths visible should it be required).
